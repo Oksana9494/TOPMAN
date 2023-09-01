@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPMAN тестовое задание</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="page-main">
+        <div class="container">
+            <h1 class="page-main__title">Тестовое задание</h1>
+            <button class="popap-open">
+                Оставить заявку
+            </button>     
+        </div> 
+        <div class="popap">
+            <div class="popap-content">
+                <h2 class="popap__title">Оставить заявку</h2>   
+                <span class="popap-close">x</span>             
+                <form class="form" action="#">
+                    <input class="form__item" type="name" placeholder="ФИО *" name="name" required>
+                    <input class="form__item" id="phone" placeholder="+7 (___) ___-__-__ *" type="tel" name="tel" required>
+                    <div class="select">
+                        <div class="select-wrapper">
+                          <div class="select-custom js-select-custom">
+                            <div class="select-custom-trigger">Выберите город</div>
+                            <div class="select-custom-options">
+                              <div class="select-custom__option" data-value="krasnodar">Краснодар</div>
+                              <div class="select-custom__option" data-value="rostov-on-don">Ростов-на-Дону</div>
+                              <div class="select-custom__option" data-value="anapa">Анапа</div>                             
+                              <div class="select-custom__option" data-value="moscow">Москва</div>
+                              <div class="select-custom__option" data-value="voronezh">Воронеж</div>
+                              <div class="select-custom__option" data-value="belgorod">Белгород</div>
+                              <div class="select-custom__option" data-value="petersburg">Санкт-Петербург</div>                      
+                              <div class="select-custom__option" data-value="sochi">Сочи</div>                             
+                              <div class="select-custom__option" data-value="gelendzhik">Геленджик</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                    <textarea class="form__item form__item_large">Сообщение</textarea>
+                    <div class="flex_box">
+                        <button class="form__btn" id="" type="submit">Оставить заявку</button>
+                        <span class="form__text">
+                            Нажимая кнопку, я даю согласие на обработку персональных данных, 
+                            в соответствии с <a class="form__link" href="#">Политикой</a>, и соглашаюсь с <a class="form__link" href="#">Правилами</a>
+                        </span>
+                    </div>                    
+                </form>
+            </div>
+        </div>  
+    </section>
+   <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+   <script src="./js/mask.js"></script>
+   <script src="./js/select.js"></script>
+   <script src="./js/modal.js"></script>
+</body>
+</html>
